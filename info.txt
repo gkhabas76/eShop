@@ -1,0 +1,15 @@
+this is the information page
+
+here I have created a new folder called partials.
+This folder will contain the files which are necessary in other main files.
+
+I have also installed the handlebars third party templates that offers a more features than built-in one
+After installing the handlebars third party templates, we have to now require the that module in app.js files
+and modify the code i.e.
+app.engine('.hbs', expressHbs({defaultLayout: 'layout', extname: '.hbs'}));
+app.set('view engine', '.hbs');
+
+old code is
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'hbs');
